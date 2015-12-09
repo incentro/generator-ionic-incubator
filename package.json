@@ -1,0 +1,41 @@
+{
+	"name": "generator-ionic-incubator",
+	"version": "0.0.0",
+	"description": "Yeoman generator for Ionic Projects",
+	"homepage": "",
+	"author": {
+		"name": "Pieter Bogaerts",
+		"email": "pieter.bogaerts@incentro.com",
+		"url": "http://www.goedonthouden.com/"
+	},
+	"files": [
+		"generators"
+	],
+	"main": "generators/index.js",
+	"keywords": [
+		"yeoman-generator"
+	],
+	"dependencies": {
+		"yeoman-generator": "^0.21.1",
+		"chalk": "^1.0.0",
+		"yosay": "^1.0.2",
+		"underscore.string": "^3.2.2",
+		"mkdirp": "^0.5.1"
+	},
+	"devDependencies": {
+		"yeoman-assert": "^2.0.0",
+		"gulp": "^3.6.0",
+		"gulp-eslint": "^1.0.0",
+		"gulp-exclude-gitignore": "^1.0.0",
+		"gulp-istanbul": "^0.9.0",
+		"gulp-mocha": "^2.0.0",
+		"gulp-plumber": "^1.0.0",
+		"gulp-nsp": "^2.1.0"
+	},
+	"repository": "PizzaPete/generator-ionic-incubator",
+	"scripts": {
+		"prepublish": "gulp prepublish",
+		"test": "gulp"
+	},
+	"license": "MIT"
+}

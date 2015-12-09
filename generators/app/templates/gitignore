@@ -1,0 +1,8 @@
+bower_components/
+node_modules/
+platforms/
+www/
+ionic.project
+*.DS_Store
+*.log
+*.swp
