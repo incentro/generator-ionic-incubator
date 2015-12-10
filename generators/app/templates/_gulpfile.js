@@ -259,7 +259,6 @@ gulp.task('watchers', function() {
 	plugins.livereload.listen();
 	gulp.watch('src/styles/**/*.scss', ['styles']);
 	gulp.watch('src/fonts/**', ['fonts']);
-	gulp.watch('src/icons/**', ['iconfont']);
 	gulp.watch('src/images/**', ['images']);
 	gulp.watch('src/scripts/**/*.js', ['buildIndex']);
 	gulp.watch('./vendor.json', ['vendor']);

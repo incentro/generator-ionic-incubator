@@ -5,10 +5,10 @@
 	"devDependencies": {},
 	"dependencies": {
 		"angular": "^1.4.3",
-		"angular-mocks": "~1.4.3",
+		"angular-mocks": "^1.4.8",
 		"angular-resource": "^1.4.3",
-		"ionic": "^1.1.1",
-		"ngCordova": "^0.1.20-alpha"
+		"ionic": "^1.2.0",
+		"ngCordova": "^0.1.17-alpha"
 	},
 	"resolutions": {
 		"angular": "1.4.3"
