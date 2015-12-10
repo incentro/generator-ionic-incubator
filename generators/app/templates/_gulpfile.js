@@ -54,7 +54,7 @@ var config = {
     path: {
         src: {
             root: 'src',
-            asset : {
+            asset: {
                 javascript: './src/scripts',
                 images: './src/images',
                 templates: './src/templates',
@@ -79,28 +79,28 @@ gulp.task('styles', function() {
 	var options = build ? { style: 'compressed' } : { style: 'expanded' };
 
 	var sassStream = gulp.src(config.path.src.asset.javascript + 'main.scss')
-	    .pipe(plugins.sass(options))
-	    .on('error', function(err) {
-	    	console.log('err: ', err);
-	    });
+		.pipe(plugins.sass(options))
+		.on('error', function(err) {
+			console.log('err: ', err);
+		});
 
 	// Build ionic css dynamically to support custom themes
 	var ionicStream = gulp.src(config.path.src.asset.scss + '/ionic-styles.scss')
-	    .pipe(plugins.cached('ionic-styles'))
-	    .pipe(plugins.sass(options))
-	    // Cache and remember ionic .scss in order to cut down re-compile time
-	    .pipe(plugins.remember('ionic-styles'))
-	    .on('error', function(err) {
-	    	console.log('err: ', err);
-	    });
+		.pipe(plugins.cached('ionic-styles'))
+		.pipe(plugins.sass(options))
+		// Cache and remember ionic .scss in order to cut down re-compile time
+		.pipe(plugins.remember('ionic-styles'))
+		.on('error', function(err) {
+			console.log('err: ', err);
+		});
 
 	return streamqueue({ objectMode: true }, ionicStream, sassStream)
-	    .pipe(plugins.autoprefixer(config.autoprefix.support.split(', ')))
-	    .pipe(plugins.concat('main.css'))
-	    .pipe(plugins.if(build, plugins.stripCssComments()))
-	    .pipe(plugins.if(build && !emulate, plugins.rev()))
-	    .pipe(gulp.dest(path.join(targetDir, 'styles')))
-	    .on('error', errorHandler);
+		.pipe(plugins.autoprefixer(config.autoprefix.support.split(', ')))
+		.pipe(plugins.concat('main.css'))
+		.pipe(plugins.if(build, plugins.stripCssComments()))
+		.pipe(plugins.if(build && !emulate, plugins.rev()))
+		.pipe(gulp.dest(path.join(targetDir, 'styles')))
+		.on('error', errorHandler);
 });
 
 // Build templatecache, copy scripts.
@@ -139,8 +139,8 @@ gulp.task('scripts', function() {
 
 // Copy fonts
 gulp.task('fonts', function() {
-  	return gulp
-    	.src([config.path.src.asset.fonts + '/*.*', './bower_components/ionic/release/fonts/*.*'])
+	return gulp
+		.src([config.path.src.asset.fonts + '/*.*', './bower_components/ionic/release/fonts/*.*'])
 		.pipe(gulp.dest(path.join(targetDir, 'fonts')))
 		.on('error', errorHandler);
 });
@@ -155,17 +155,17 @@ gulp.task('templates', function() {
 // Copy images
 gulp.task('images', function() {
 	return gulp.src(config.path.src.asset.images + '/**/*.*')
-    	.pipe(gulp.dest(path.join(targetDir, 'images')))
-    	.on('error', errorHandler);
+		.pipe(gulp.dest(path.join(targetDir, 'images')))
+		.on('error', errorHandler);
 });
 
 // Lint js sources based on .jshintrc ruleset
 gulp.task('jsHint', function() {
 	return gulp
-	    .src(config.path.src.asset.scripts + '/**/*.js')
-	    .pipe(plugins.jshint())
-	    .pipe(plugins.jshint.reporter())
-	    .on('error', errorHandler);
+		.src(config.path.src.asset.scripts + '/**/*.js')
+		.pipe(plugins.jshint())
+		.pipe(plugins.jshint.reporter())
+		.on('error', errorHandler);
 });
 
 // Concatenate and minify vendor sources
@@ -235,9 +235,9 @@ gulp.task('protractor', ['serve'], function(callback) {
     gulp
         .src(['/test/e2e/**/*.js'])
         .pipe(gulpProtractorAngular({
-            'configFile': './protractor.conf.js',
-            'debug': false,
-            'autoStartStopServer': true
+            configFile: './protractor.conf.js',
+            debug: false,
+            autoStartStopServer: true
         }))
         .on('error', function(e) {
             console.log(e);

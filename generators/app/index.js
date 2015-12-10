@@ -17,28 +17,28 @@ module.exports = yeoman.generators.Base.extend({
 		));
 
 		var prompts = [{
-	        type: 'input',
-	        name: 'appName',
-	        message: 'What is the app going to be called?',
-	        default : this.appname
-	    },
-	    {
+			type: 'input',
+			name: 'appName',
+			message: 'What is the app going to be called?',
+			default: this.appname
+		},
+		{
 			type: 'input',
 			name: 'userName',
 			message: 'The author\'s name? (for config files)',
-			default : this.user.git.name || 'Your Name'
+			default: this.user.git.name || 'Your Name'
 		},
 		{
 			type: 'input',
 			name: 'userMail',
 			message: 'Author email? (for config files)',
-			default : this.user.git.email || 'email@example.com'
+			default: this.user.git.email || 'email@example.com'
 		}];
 
 		this.prompt(prompts, function (props) {
 			this.appName = props.appName;
-	        this.userName = props.userName;
-	        this.userMail = props.userMail;
+			this.userName = props.userName;
+			this.userMail = props.userMail;
 			done();
 		}.bind(this));
 	},
@@ -49,7 +49,7 @@ module.exports = yeoman.generators.Base.extend({
 			type: 'input',
 			name: 'appId',
 			message: 'What do you want the app id to be?',
-			default : 'com.' + _.classify(this.userName).toLowerCase() + '.' + _.classify(this.appName).toLowerCase()
+			default: 'com.' + _.classify(this.userName).toLowerCase() + '.' + _.classify(this.appName).toLowerCase()
 		}], function (props) {
 			this.appId = props.appId;
 			done();

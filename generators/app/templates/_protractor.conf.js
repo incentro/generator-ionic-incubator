@@ -1,7 +1,10 @@
+/* globals browser */
+'use strict';
+
 exports.config = {
     capabilities: {
-		'browserName': 'chrome',
-		'chromeOptions': {
+		browserName: 'chrome',
+		chromeOptions: {
             args: ['--disable-web-security']
         }
     },
@@ -11,7 +14,7 @@ exports.config = {
     jasmineNodeOpts: {
         showColors: true,
         defaultTimeoutInterval: 30000,
-        isVerbose: true,
+        isVerbose: true
     },
     baseUrl: 'http://localhost:8100/',
     allScriptsTimeout: 20000,

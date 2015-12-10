@@ -97,7 +97,7 @@ describe('generator-ionic-incubator:app', function() {
 	it('test files contain input values', function() {
 		assert.fileContent('test/e2e/app.home.spec.js', 'expect(mainPageObject.headerTitle.getText()).toMatch(\'Testapp\');');
 		assert.fileContent('test/e2e/app.home.spec.js', 'expect(title.getText()).toMatch(\'Testapp\');');
-		assert.fileContent('test/unit/app.spec.js', 'describe(\'Testapp\',function(){');
+		assert.fileContent('test/unit/app.spec.js', 'describe(\'Testapp\', function(){');
 		assert.fileContent('test/unit/homeController.spec.js', 'module(\'Testapp\');');
 		assert.fileContent('test/unit/mainController.spec.js', 'module(\'Testapp\');');
 		assert.fileContent('test/unit/route.spec.js', 'module(\'Testapp\');');

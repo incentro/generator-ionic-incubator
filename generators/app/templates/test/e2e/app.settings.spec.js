@@ -16,7 +16,7 @@ describe('The app/settings page', function(){
     });
 
     it('Checking the header bar for the title and the menu button', function(){
-    	expect(mainPageObject.header.isDisplayed()).toBeTruthy();
+		expect(mainPageObject.header.isDisplayed()).toBeTruthy();
 
         expect(mainPageObject.headerTitle.getText()).toMatch('Settings');
 
@@ -24,18 +24,18 @@ describe('The app/settings page', function(){
     });
 
     it('Checking the page content', function(){
-    	var itemList = mainPageObject.activeView.element(by.className('list')).all(by.className('item'));
+		var itemList = mainPageObject.activeView.element(by.className('list')).all(by.className('item'));
 
-    	expect(itemList.count()).toBe(2);
+		expect(itemList.count()).toBe(2);
 
-    	expect(itemList.first().element(by.className('settings-item__text')).getText()).toMatch('Allow Push Notifications');
+		expect(itemList.first().element(by.className('settings-item__text')).getText()).toMatch('Allow Push Notifications');
 
-    	expect(itemList.get(1).element(by.className('settings-item__text')).getText()).toMatch('Allow cookies');
+		expect(itemList.get(1).element(by.className('settings-item__text')).getText()).toMatch('Allow cookies');
 
-    	itemList.first().element(by.tagName('label')).click();
+		itemList.first().element(by.tagName('label')).click();
 
-    	expect(itemList.first().element(by.tagName('input')).isSelected()).toBeTruthy();
+		expect(itemList.first().element(by.tagName('input')).isSelected()).toBeTruthy();
 
-    	expect(itemList.get(1).element(by.tagName('input')).isSelected()).toBeFalsy();
+		expect(itemList.get(1).element(by.tagName('input')).isSelected()).toBeFalsy();
     });
 });

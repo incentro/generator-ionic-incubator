@@ -2,15 +2,15 @@
 'use strict';
 
 describe('MainController', function () {
-	var $scope, ctrl;
+	var $scope;
 
 	beforeEach(function() {
 		module('<%= ngModulName %>');
 
 		inject(function($controller, $rootScope) {
 			$scope = $rootScope.$new();
-			ctrl = $controller('MainController', {
-	  			$scope: $scope
+			$controller('MainController', {
+				$scope: $scope
 			});
 		});
 	});

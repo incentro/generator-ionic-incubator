@@ -27,8 +27,8 @@ describe('The app/home page', function(){
         var title = mainPageObject.pageContent.element(by.tagName('h2'));
         expect(title.getText()).toMatch('<%= ngModulName %>');
 
-        browser.actions().mouseDown(mainPageObject.pageContent).mouseMove({x:0, y: -400}).mouseDown(mainPageObject.pageContent).perform().then(function() {
-	    	expect($('ion-side-menu-content [nav-view=active] .scroll-refresher').getAttribute('class')).toContain('active');
+        browser.actions().mouseDown(mainPageObject.pageContent).mouseMove({x: 0, y: -400}).mouseDown(mainPageObject.pageContent).perform().then(function() {
+			expect($('ion-side-menu-content [nav-view=active] .scroll-refresher').getAttribute('class')).toContain('active');
         });
     });
 });

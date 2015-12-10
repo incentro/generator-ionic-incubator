@@ -4,7 +4,10 @@
 // Based on: http://nikas.praninskas.com/angular/2014/09/27/unit-testing-ui-router-configuration/
 
 describe('config', function () {
-	var $state, $templateCache, $location, $rootScope;
+	var $state;
+	var $templateCache;
+	var $location;
+	var $rootScope;
 
 	function mockTemplate(templateRoute, tmpl) {
 		$templateCache.put(templateRoute, tmpl || templateRoute);

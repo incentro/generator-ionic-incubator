@@ -1,5 +1,7 @@
+/* globals angular */
+'use strict';
+
 (function() {
-	'use strict';
 
 	/**
 	 * @ngdoc function
@@ -17,7 +19,7 @@
 		$scope.getText = function() {
 			$scope.myHTML = '<h2><%= ngModulName %></h2>';
             $scope.$broadcast('scroll.refreshComplete');
-		}
+		};
 
 		$scope.getText();
 	}

@@ -1,5 +1,7 @@
+/* globals angular */
+'use strict';
+
 (function() {
-	'use strict';
 
 	/**
 	 * @ngdoc function
@@ -11,7 +13,6 @@
 	var inject = [];
 
 	function MainController() {
-
 	}
 
 	angular

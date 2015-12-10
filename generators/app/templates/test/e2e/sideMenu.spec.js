@@ -43,6 +43,6 @@ describe('The sidemenu', function(){
 		expect(sideMenuItems.first().getAttribute('class')).toContain('active');
 
 		sideMenuItems.get(1).click();
-    	expect(browser.getCurrentUrl()).toMatch('/app/settings');
+		expect(browser.getCurrentUrl()).toMatch('/app/settings');
     });
 });

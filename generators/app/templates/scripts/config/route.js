@@ -1,5 +1,7 @@
+/* globals angular */
+'use strict';
+
 (function() {
-	'use strict';
 
 	/**
 	 * @ngdoc overview
@@ -10,7 +12,7 @@
 	 * Routing module of the application.
 	 */
 
-	 var inject = ['$httpProvider', '$stateProvider', '$urlRouterProvider'];
+	var inject = ['$httpProvider', '$stateProvider', '$urlRouterProvider'];
 
 	function config($httpProvider, $stateProvider, $urlRouterProvider){
 		$stateProvider
@@ -24,7 +26,7 @@
 				url: '/home',
 				cache: true,
 				views: {
-					'viewContent': {
+					viewContent: {
 						templateUrl: 'templates/views/home.html',
 						controller: 'HomeController'
 					}
@@ -34,7 +36,7 @@
 				url: '/settings',
 				cache: true,
 				views: {
-					'viewContent': {
+					viewContent: {
 						templateUrl: 'templates/views/settings.html',
 						controller: 'SettingsController'
 					}

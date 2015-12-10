@@ -1,5 +1,7 @@
+/* globals angular */
+'use strict';
+
 (function() {
-	'use strict';
 
 	/**
 	 * @ngdoc overview
@@ -12,10 +14,10 @@
 
 	runBlock.$inject = ['$ionicPlatform'];
 
-	function runBlock($ionicPlatform) {
+	function runBlock() {
 	}
 
 	angular
-	    .module('<%= ngModulName %>')
-	    .run(runBlock);
+		.module('<%= ngModulName %>')
+		.run(runBlock);
 })();

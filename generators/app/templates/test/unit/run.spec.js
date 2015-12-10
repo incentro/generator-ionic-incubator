@@ -1,6 +1,6 @@
 /* globals describe */
 'use strict';
 
-describe('runBlock',function(){
+describe('runBlock', function(){
 
 });
