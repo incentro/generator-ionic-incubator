@@ -13,7 +13,14 @@
 	],
 	"main": "generators/index.js",
 	"keywords": [
-		"yeoman-generator"
+		"yeoman-generator",
+		"ionic",
+		"framework",
+		"gulp",
+		"ionicframework",
+		"hybrid",
+		"app",
+		"incubator"
 	],
 	"dependencies": {
 		"yeoman-generator": "^0.21.1",
