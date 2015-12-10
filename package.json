@@ -1,8 +1,9 @@
 {
 	"name": "generator-ionic-incubator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Yeoman generator for Ionic Projects",
 	"homepage": "",
+	"bugs": "https://github.com/PizzaPete/generator-ionic-incubator/issues",
 	"author": {
 		"name": "Pieter Bogaerts",
 		"email": "pieter.bogaerts@incentro.com",
@@ -39,7 +40,10 @@
 		"gulp-plumber": "^1.0.1",
 		"yeoman-assert": "^2.1.1"
 	},
-	"repository": "PizzaPete/generator-ionic-incubator",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/PizzaPete/generator-ionic-incubator.git"
+	},
 	"scripts": {
 		"prepublish": "gulp prepublish",
 		"test": "gulp"
