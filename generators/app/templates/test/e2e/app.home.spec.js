@@ -1,4 +1,4 @@
-/* globals describe, it, by, expect, browser, $, require, beforeEach */
+/* globals describe, it, by, expect, browser, require, beforeEach */
 'use strict';
 
 var MainPageObject = require('./pageObjects/MainPageObjects.js');
