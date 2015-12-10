@@ -4,10 +4,11 @@
 // Change to desired application name
 var appName = '<%= ngModulName %>';
 
-var gulpProtractorAngular = require('gulp-angular-protractor');
+var chalk = require('chalk');
 var del = require('del');
 var gulp = require('gulp');
-var karma = require('karma').server;
+var gulpProtractorAngular = require('gulp-angular-protractor');
+var karma = require('karma');
 var open = require('open');
 var path = require('path');
 var plugins = require('gulp-load-plugins')();
@@ -50,6 +51,7 @@ var errorHandler = function(error) {
 	}
 };
 
+// Global configuration
 var config = {
     path: {
         src: {
@@ -224,14 +226,20 @@ gulp.task('serve', plugins.shell.task([
 	'ionic serve'
 ]));
 
-gulp.task('tests', function(done) {
-	return karma.start({
-		configFile: '/test/karma.conf.js',
+// Unit tests
+gulp.task('karma', function(done) {
+	build = true;
+	gulp.run('default');
+	var server = new karma.Server({
+		configFile: __dirname + '/karma.conf.js',
 		singleRun: true
 	}, done);
+	return server.start();
 });
 
-gulp.task('protractor', ['serve'], function(callback) {
+// E2E tests
+gulp.task('protractor', function(callback) {
+	console.log(chalk.inverse('Make sure you run "gulp default" before running "gulp protractor"'));
     gulp
         .src(['/test/e2e/**/*.js'])
         .pipe(gulpProtractorAngular({
@@ -241,6 +249,7 @@ gulp.task('protractor', ['serve'], function(callback) {
         }))
         .on('error', function(e) {
             console.log(e);
+            console.log(chalk.inverse('Make sure you run "gulp default" before running "gulp protractor"'));
         })
         .on('end', callback);
 });

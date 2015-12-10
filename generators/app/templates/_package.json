@@ -9,6 +9,7 @@
 	},
 	"devDependencies": {
 		"bower": "^1.6.5",
+		"chalk": "^1.1.1",
 		"del": "^2.1.0",
 		"gulp": "^3.9.0",
 		"gulp-angular-protractor": "^0.0.6",

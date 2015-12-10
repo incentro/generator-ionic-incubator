@@ -1,6 +1,6 @@
 {
 	"name": "generator-ionic-incubator",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Yeoman generator for Ionic Projects",
 	"homepage": "",
 	"author": {
@@ -17,20 +17,20 @@
 	],
 	"dependencies": {
 		"yeoman-generator": "^0.21.1",
-		"chalk": "^1.0.0",
+		"chalk": "^1.1.1",
 		"yosay": "^1.0.2",
 		"underscore.string": "^3.2.2",
 		"mkdirp": "^0.5.1"
 	},
 	"devDependencies": {
-		"yeoman-assert": "^2.0.0",
-		"gulp": "^3.6.0",
-		"gulp-eslint": "^1.0.0",
+		"gulp": "^3.9.0",
+		"gulp-eslint": "^1.1.1",
 		"gulp-exclude-gitignore": "^1.0.0",
-		"gulp-istanbul": "^0.9.0",
-		"gulp-mocha": "^2.0.0",
-		"gulp-plumber": "^1.0.0",
-		"gulp-nsp": "^2.1.0"
+		"gulp-istanbul": "^0.10.3",
+		"gulp-mocha": "^2.2.0",
+		"gulp-nsp": "^2.1.1",
+		"gulp-plumber": "^1.0.1",
+		"yeoman-assert": "^2.1.1"
 	},
 	"repository": "PizzaPete/generator-ionic-incubator",
 	"scripts": {
