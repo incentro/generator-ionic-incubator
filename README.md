@@ -1,5 +1,13 @@
 # generator-ionic-incubator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Yeoman generator for Ionic Projects
+> Yeoman generator for Ionic Projects. Sets up a default Ionic template with E2E testing and Unit testing.
+
+## Features
+
+* [Gulp](http://gulpjs.com/) for task automation
+* Compiles and concats your SASS
+* Local development server with [Apache Ripple](http://ripple.incubator.apache.org/) included
+* Providing custom Ionic changes in a seperate SASS file
+* [ng-cordova](http://ngcordova.com/) is built in
 
 ## Installation
 
@@ -16,9 +24,11 @@ Then generate your new project:
 yo generator-ionic-incubator
 ```
 
-## Getting To Know Yeoman
+To run the application just run:
 
-Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he&#39;s very easy to work with. If you think he&#39;s too opinionated, he can be easily convinced. Feel free to [learn more about him](http://yeoman.io/).
+```bash
+gulp
+```
 
 ## License
 
