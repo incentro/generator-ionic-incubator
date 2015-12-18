@@ -12,12 +12,14 @@
 	 * Run module of the application.
 	 */
 
-	runBlock.$inject = ['$ionicPlatform'];
+	var inject = ['$ionicPlatform'];
 
-	function runBlock() {
+	function runBlock(){
 	}
 
 	angular
 		.module('<%= ngModulName %>')
 		.run(runBlock);
+
+	runBlock.$inject = inject;
 })();
