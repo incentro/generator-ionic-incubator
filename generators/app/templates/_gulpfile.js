@@ -80,7 +80,7 @@ gulp.task('styles', function() {
 
 	var options = build ? { style: 'compressed' } : { style: 'expanded' };
 
-	var sassStream = gulp.src(config.path.src.asset.javascript + 'main.scss')
+	var sassStream = gulp.src(config.path.src.asset.scss + '/main.scss')
 		.pipe(plugins.sass(options))
 		.on('error', function(err) {
 			console.log('err: ', err);
