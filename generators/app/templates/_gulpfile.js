@@ -72,7 +72,7 @@ var config = {
 
 // Clean target dir
 gulp.task('clean', function() {
-	del([targetDir]);
+	return del([targetDir]);
 });
 
 // Precompile .scss and concat with ionic.css
