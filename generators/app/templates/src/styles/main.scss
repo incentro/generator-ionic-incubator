@@ -4,23 +4,33 @@
  *
  ************************************/
 
+/**
+ * Ionic & custor variables
+ */
 @import "_variables";
 
+
 /**
- * LAYOUT
+ * Vendor / Ionic styles
+ */
+@import 'bower_components/ionic/scss/ionic';
+
+
+/**
+ * Layout
  */
 
 @import "layout/layout";
 
 
 /**
- * MENU
+ * Menu
  */
 
 @import "menu/menu";
 
 /**
- * VIEWS
+ * Views
  */
 
 @import "views/home";

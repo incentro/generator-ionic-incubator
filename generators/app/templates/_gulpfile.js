@@ -78,28 +78,12 @@ gulp.task('clean', function() {
 // Precompile .scss and concat with ionic.css
 gulp.task('styles', function() {
 
-	var options = build ? { style: 'compressed' } : { style: 'expanded' };
+	var options = build ? { outputStyle: 'compressed' } : { outputStyle: 'expanded' };
 
-	var sassStream = gulp.src(config.path.src.asset.scss + '/main.scss')
+	return gulp.src(config.path.src.asset.scss + '/main.scss')
 		.pipe(plugins.sass(options))
-		.on('error', function(err) {
-			console.log('err: ', err);
-		});
-
-	// Build ionic css dynamically to support custom themes
-	var ionicStream = gulp.src(config.path.src.asset.scss + '/ionic-styles.scss')
-		.pipe(plugins.cached('ionic-styles'))
-		.pipe(plugins.sass(options))
-		// Cache and remember ionic .scss in order to cut down re-compile time
-		.pipe(plugins.remember('ionic-styles'))
-		.on('error', function(err) {
-			console.log('err: ', err);
-		});
-
-	return streamqueue({ objectMode: true }, ionicStream, sassStream)
 		.pipe(plugins.autoprefixer(config.autoprefix.support.split(', ')))
 		.pipe(plugins.concat('main.css'))
-		.pipe(plugins.if(build, plugins.stripCssComments()))
 		.pipe(plugins.if(build && !emulate, plugins.rev()))
 		.pipe(gulp.dest(path.join(targetDir, 'styles')))
 		.on('error', errorHandler);
