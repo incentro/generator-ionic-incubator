@@ -69,7 +69,6 @@ describe('generator-ionic-incubator:app', function() {
 	it('copied scss files', function() {
 		assert.file([
 			'src/styles/_variables.scss',
-			'src/styles/ionic-styles.scss',
 			'src/styles/main.scss',
 			'src/styles/layout/layout.scss',
 			'src/styles/menu/menu.scss',
