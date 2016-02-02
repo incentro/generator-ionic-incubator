@@ -104,6 +104,13 @@ Launches [Apache Ripple](http://ripple.incubator.apache.org/) (make sure you've 
 
 ## Changelog
 
+### 0.2.0
+
+* [Changed dependency injection for the runBlock](https://github.com/PizzaPete/generator-ionic-incubator/pull/1)
+* [Fix for SCSS path and a little typo](https://github.com/PizzaPete/generator-ionic-incubator/pull/2)
+* [Fix error after second build](https://github.com/PizzaPete/generator-ionic-incubator/pull/3)
+* [Refactoring SCSS part](https://github.com/PizzaPete/generator-ionic-incubator/pull/4)
+
 ### 0.1.0
 
 * Update to [Ionic 1.2.0](https://github.com/driftyco/ionic/blob/master/CHANGELOG.md#120-zirconium-zeren-2015-12-09).
