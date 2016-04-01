@@ -3,11 +3,11 @@
 	"version": "0.2.1",
 	"description": "Yeoman generator for Ionic Projects",
 	"homepage": "",
-	"bugs": "https://github.com/PizzaPete/generator-ionic-incubator/issues",
+	"bugs": "https://github.com/incentro/generator-ionic-incubator/issues",
 	"author": {
 		"name": "Pieter Bogaerts",
 		"email": "pieter.bogaerts@incentro.com",
-		"url": "http://www.goedonthouden.com/"
+		"url": "http://www.incentro.com/"
 	},
 	"files": [
 		"generators"
@@ -24,25 +24,25 @@
 		"incubator"
 	],
 	"dependencies": {
-		"yeoman-generator": "^0.21.1",
-		"chalk": "^1.1.1",
-		"yosay": "^1.0.2",
-		"underscore.string": "^3.2.2",
-		"mkdirp": "^0.5.1"
+		"chalk": "^1.1.3",
+		"mkdirp": "^0.5.1",
+		"underscore.string": "^3.3.4",
+		"yeoman-generator": "^0.22.5",
+		"yosay": "^1.1.0"
 	},
 	"devDependencies": {
 		"gulp": "^3.9.0",
-		"gulp-eslint": "^1.1.1",
+		"gulp-eslint": "^2.0.0",
 		"gulp-exclude-gitignore": "^1.0.0",
 		"gulp-istanbul": "^0.10.3",
 		"gulp-mocha": "^2.2.0",
-		"gulp-nsp": "^2.1.1",
-		"gulp-plumber": "^1.0.1",
+		"gulp-nsp": "^2.3.1",
+		"gulp-plumber": "^1.1.0",
 		"yeoman-assert": "^2.1.1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/PizzaPete/generator-ionic-incubator.git"
+		"url": "git://github.com/incentro/generator-ionic-incubator.git"
 	},
 	"scripts": {
 		"prepublish": "gulp prepublish",
