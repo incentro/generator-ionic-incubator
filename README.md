@@ -111,10 +111,10 @@ Launches [Apache Ripple](http://ripple.incubator.apache.org/) (make sure you've 
 
 ### 0.2.0
 
-* [Changed dependency injection for the runBlock](https://github.com/PizzaPete/generator-ionic-incubator/pull/1)
-* [Fix for SCSS path and a little typo](https://github.com/PizzaPete/generator-ionic-incubator/pull/2)
-* [Fix error after second build](https://github.com/PizzaPete/generator-ionic-incubator/pull/3)
-* [Refactoring SCSS part](https://github.com/PizzaPete/generator-ionic-incubator/pull/4)
+* [Changed dependency injection for the runBlock](https://github.com/incentro/generator-ionic-incubator/pull/1)
+* [Fix for SCSS path and a little typo](https://github.com/incentro/generator-ionic-incubator/pull/2)
+* [Fix error after second build](https://github.com/incentro/generator-ionic-incubator/pull/3)
+* [Refactoring SCSS part](https://github.com/incentro/generator-ionic-incubator/pull/4)
 
 ### 0.1.0
 
@@ -129,7 +129,7 @@ MIT © [Pieter Bogaerts](http://www.goedonthouden.com/)
 
 [npm-image]: https://badge.fury.io/js/generator-ionic-incubator.svg
 [npm-url]: https://npmjs.org/package/generator-ionic-incubator
-[travis-image]: https://travis-ci.org/PizzaPete/generator-ionic-incubator.svg?branch=master
-[travis-url]: https://travis-ci.org/PizzaPete/generator-ionic-incubator
-[daviddm-image]: https://david-dm.org/PizzaPete/generator-ionic-incubator.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/PizzaPete/generator-ionic-incubator
+[travis-image]: https://travis-ci.org/incentro/generator-ionic-incubator.svg?branch=master
+[travis-url]: https://travis-ci.org/incentro/generator-ionic-incubator
+[daviddm-image]: https://david-dm.org/incentro/generator-ionic-incubator.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/incentro/generator-ionic-incubator
