@@ -288,6 +288,10 @@ module.exports = yeoman.Base.extend({
 		}
 	},
 
+	cordovaHooks: function cordovaHooks() {
+		this.directory('hooks', 'hooks', true);
+    },
+
 	install: function () {
 		this.installDependencies();
 	}
