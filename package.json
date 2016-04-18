@@ -1,6 +1,6 @@
 {
 	"name": "generator-ionic-incubator",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "Yeoman generator for Ionic Projects",
 	"homepage": "",
 	"bugs": "https://github.com/incentro/generator-ionic-incubator/issues",

@@ -104,6 +104,11 @@ Launches [Apache Ripple](http://ripple.incubator.apache.org/) (make sure you've 
 
 ## Changelog
 
+### 0.3.0
+
+* Updated dependencies.
+* Moved the repo to the Incentro account.
+
 ### 0.2.0
 
 * [Changed dependency injection for the runBlock](https://github.com/PizzaPete/generator-ionic-incubator/pull/1)
