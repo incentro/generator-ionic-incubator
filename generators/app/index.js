@@ -1,7 +1,6 @@
 /* globals require, module */
 'use strict';
 
-var fs = require('fs');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
