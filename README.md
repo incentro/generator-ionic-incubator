@@ -104,6 +104,11 @@ Launches [Apache Ripple](http://ripple.incubator.apache.org/) (make sure you've 
 
 ## Changelog
 
+### 0.5.0
+
+* Updated dependencies.
+* Update to [Ionic 1.3.0](https://github.com/driftyco/ionic/releases/tag/v1.3.0).
+
 ### 0.4.0
 
 * Added the Ionic hooks directory.
