@@ -83,7 +83,7 @@ gulp.task('styles', function() {
 	return gulp.src(config.path.src.asset.scss + '/main.scss')
 		.pipe(plugins.sass(options))
 		.pipe(plugins.autoprefixer(config.autoprefix.support.split(', ')))
-		.pipe(plugins.concat('main.css'))
+		.pipe(plugins.cleanCss('main.css'))
 		.pipe(plugins.if(build && !emulate, plugins.rev()))
 		.pipe(gulp.dest(path.join(targetDir, 'styles')))
 		.on('error', errorHandler);
