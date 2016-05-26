@@ -33,7 +33,7 @@
 		"gulp-strip-debug": "^1.1.0",
 		"gulp-uglify": "^1.5.3",
 		"gulp-util": "^3.0.7",
-		"ionic": "^1.7.14",
+		"ionic": "^1.7.15",
 		"ios-sim": "^5.0.8",
 		"jasmine-core": "^2.4.1",
 		"jshint": "^2.9.2",

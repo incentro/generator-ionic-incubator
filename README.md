@@ -104,6 +104,10 @@ Launches [Apache Ripple](http://ripple.incubator.apache.org/) (make sure you've 
 
 ## Changelog
 
+### 0.6.0
+
+* Update to [Ionic 1.3.1](https://github.com/driftyco/ionic/releases/tag/v1.3.1).
+
 ### 0.5.0
 
 * Updated dependencies.
